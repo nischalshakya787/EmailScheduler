@@ -37,7 +37,7 @@ const main = () => {
       async function sendmail() {
         let fromSection = USERNAME + "<" + EMAIL + ">";
         const html = htmlGen({
-          intro: "Hello Yujala, Hope you are doing well.❤️",
+          intro: "Hello",
           second_line: `Here is your Motivation of the day: <br><br><b>${motivationalQuote}</b>`,
           outro:
             "Stay motivated and make today great!<br>Sending Lots of Love, Nischal Shakya",
@@ -45,7 +45,7 @@ const main = () => {
 
         const info = await transporter.sendMail({
           from: fromSection,
-          to: "shakyayujala@gmail.com,nischalshakya787@gmail.com",
+          to: "nischalshakya787@gmail.com",
           subject: "Motivation",
           html: html,
           text: motivationalQuote,
